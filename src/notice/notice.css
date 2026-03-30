@@ -1,0 +1,165 @@
+@media screen and (min-width:1200px) {
+  html {
+    font-size: 12px;
+    background-color: #d5d5d5;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+  }
+
+  .box .ncontent {
+    flex: 1;
+    position: relative;
+
+    width: 100rem;
+
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+    background-color: #f5f5f5;
+  }
+
+  .box .ncontent .none {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 30rem;
+    height: 30rem;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .box .ncontent .ncontentlist {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+    perspective: 3rem;
+    gap: 2rem;
+  }
+
+  .box .ncontent .ncontentlist li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    width: 80rem;
+    height: 10rem;
+    transition: all .2s ease-out;
+
+    background-color: #f3f3f3d4;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .3);
+  }
+
+  .box .ncontent .ncontentlist>li {
+    margin-top: 2rem;
+  }
+
+  .box .ncontent .ncontentlist li .articleTitle {
+    flex: 1;
+    width: 80%;
+
+    cursor: pointer;
+    text-align: left center;
+    line-height: 4rem;
+    font-size: 1.5rem;
+    font-weight: 450;
+  }
+
+  .box .ncontent .ncontentlist li .articleless {
+    flex: 1;
+
+    width: 80%;
+
+    cursor: pointer;
+    text-align: left center;
+    line-height: 1rem;
+    font-size: 1rem;
+    font-weight: 250;
+  }
+
+  .box .ncontent .ncontentlist li .articletime {
+    flex: 1;
+
+    width: 80%;
+
+    cursor: pointer;
+    text-align: right;
+    font-weight: 250;
+    font-size: 0.8rem;
+  }
+
+  .box .ncontent .page {
+    display: grid;
+    grid-template-rows: auto 9fr 1fr;
+    position: absolute;
+    left: 50%;
+    top: 3%;
+    transform: translateX(-50%);
+    z-index: 3;
+
+    width: 80%;
+    height: 65rem;
+    transition: all .2 ease-out;
+
+    background-color: #f3f3f3;
+    border-radius: .5rem;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .3);
+  }
+
+  .box .ncontent .page .articleTitle {
+    justify-self: center;
+
+    width: 80%;
+    height: 4rem;
+    margin-top: 2rem;
+    border-bottom: 2px gray solid;
+
+    cursor: default;
+    text-align: left center;
+    line-height: 4rem;
+    font-size: 2.5rem;
+    font-weight: 650;
+  }
+
+  .box .ncontent .page .articleless {
+    justify-self: center;
+
+    width: 80%;
+
+    text-align: left;
+    line-height: 4rem;
+    font-size: 1.5rem;
+    font-weight: 250;
+  }
+
+  .box .ncontent .page .articletime {
+    justify-self: center;
+
+    width: 80%;
+
+    text-align: right;
+    line-height: 4rem;
+    font-size: 1.5rem;
+    font-weight: 250;
+  }
+
+  .box .shed {
+    position: absolute;
+    z-index: 2;
+
+    width: 100%;
+
+    transition: all .2 ease-out;
+    filter: blur(10px);
+    background-color: #e3e3e38c;
+  }
+}

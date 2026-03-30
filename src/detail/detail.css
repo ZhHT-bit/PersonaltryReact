@@ -1,0 +1,141 @@
+@media screen and (min-width:1200px) {
+  html {
+    font-size: 12px;
+    background-color: #d5d5d5;
+  }
+
+  .paper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+  }
+
+  .paper .content {
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    justify-self: center;
+    flex: 1;
+
+    width: 100rem;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+    background-color: #ffffff;
+  }
+
+  .paper .content .detailtitle {
+    width: 15rem;
+    height: 5rem;
+    margin: 2rem auto;
+
+    line-height: 6rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 750;
+    letter-spacing: .3rem;
+    border-bottom: 2px solid #3e3446a0;
+  }
+
+  .paper .content .contentlist {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+    perspective: 3rem;
+    gap: 2rem;
+  }
+
+  .paper .content .contentlist li {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 3rem;
+
+    width: 80rem;
+    height: 20rem;
+    transition: all .2s ease-out;
+
+    background-color: #f3f3f3d4;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .3);
+  }
+
+  .paper .content .contentlist li:hover {
+    transform: translate3d(0, 0, 1px);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+  }
+
+  .paper .content .contentlist li .dimage {
+    height: 15rem;
+    width: 25rem;
+    margin-left: 2rem;
+
+    border-radius: .5rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .paper .content .contentlist li .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    border-left: 1px solid grey;
+  }
+
+  .paper .content .contentlist li .text .textTilte {
+    flex: 1;
+    width: 80%;
+    margin-left: 2rem;
+
+    font-size: 2rem;
+    font-weight: 500;
+    border-bottom: .2rem solid #3e3446a0;
+  }
+
+  .paper .content .contentlist li .text .textArticle {
+    flex: 3;
+    width: 80%;
+    margin-left: 2rem;
+
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  .paper .content .contentlist li .love {
+    float: right;
+    transform: translate(76rem, -1rem);
+
+    width: 3rem;
+    height: 3rem;
+
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+}
+
+@media screen and (max-width:1199px) {
+  .paper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+  }
+
+  .paper .content {
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    justify-self: center;
+    flex: 1;
+
+    width: 100rem;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+    background-color: #ffffff;
+  }
+}

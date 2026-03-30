@@ -1,0 +1,116 @@
+.picture {
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+
+  width: 100%;
+  max-width: 1707px;
+  max-height: 898px;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.picture .left {
+  float: left;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 8rem;
+  height: 8rem;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
+
+  opacity: 0.8;
+  background-color: rgb(58, 58, 58);
+}
+
+.picture .left:hover {
+  background-color: rgb(229, 229, 229);
+}
+
+.picture .left div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(1rem, -50%) rotate(45deg);
+
+  width: 2rem;
+  height: 2rem;
+  border-left: 0.3rem solid rgb(229, 229, 229);
+  border-bottom: 0.3rem solid rgb(229, 229, 229);
+}
+
+.picture .left:hover div {
+  border-left: 0.3rem solid rgb(58, 58, 58);
+  border-bottom: 0.3rem solid rgb(58, 58, 58);
+}
+
+.picture .right {
+  float: right;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+
+  width: 8rem;
+  height: 8rem;
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+
+  opacity: 0.8;
+  background-color: rgb(58, 58, 58);
+}
+
+.picture .right:hover {
+  background-color: rgb(229, 229, 229);
+}
+
+.picture .right div {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(-1rem, -50%) rotate(45deg);
+
+  width: 2rem;
+  height: 2rem;
+  border-right: 0.3rem solid rgb(229, 229, 229);
+  border-top: 0.3rem solid rgb(229, 229, 229);
+}
+
+.picture .right:hover div {
+  border-right: 0.3rem solid rgb(58, 58, 58);
+  border-top: 0.3rem solid rgb(58, 58, 58);
+}
+
+.picture .count {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+
+  width: 10rem;
+  height: 2rem;
+
+  background-color: rgba(58, 58, 58, .9);
+  border-radius: 1rem;
+}
+
+.picture .count li {
+  width: 1rem;
+  height: 1rem;
+  margin-left: .5rem;
+  margin-top: .5rem;
+
+  border-radius: 50%;
+  background-color: rgba(159, 159, 159, 0.7);
+}
+
+.picture .count .pactive {
+  background-color: aliceblue;
+}
